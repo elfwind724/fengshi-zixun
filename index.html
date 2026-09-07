@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <title>资讯部</title>
+  <link rel="stylesheet" href="./board.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="rail" id="rail">
+      <p class="mark">资讯部</p>
+      <h1>看板</h1>
+      <label class="search">
+        <span>检索</span>
+        <input id="q" type="search" placeholder="词、来源、获利" autocomplete="off" />
+      </label>
+      <div class="filters" id="filters"></div>
+      <nav class="dates" id="dates" aria-label="日期"></nav>
+      <nav class="toc" id="toc" aria-label="本日目录"></nav>
+    </aside>
+    <main class="stage" id="stage">
+      <header class="top">
+        <div>
+          <p class="kicker" id="kicker">今日</p>
+          <h2 id="dateTitle"></h2>
+        </div>
+        <div class="pager">
+          <button type="button" id="prev">上一条</button>
+          <span id="pos"></span>
+          <button type="button" id="next">下一条</button>
+        </div>
+      </header>
+      <article class="card" id="card"></article>
+    </main>
+  </div>
+  <script src="./d0.js"></script>
+  <script src="./d1.js"></script>
+  <script src="./d2.js"></script>
+  <script src="./board.js"></script>
+</body>
+</html>
